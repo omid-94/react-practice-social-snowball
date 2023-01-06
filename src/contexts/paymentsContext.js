@@ -16,17 +16,27 @@ const PaymentsContextProvider = (props) => {
     },[paymentData])
 
     const setSelectedById = (id , state) => {
+        let tempPrevPaymentData = [...prevPaymentData];
         let tempPaymentData = [...paymentData];
         let index = tempPaymentData.findIndex(payment => payment.id === id)
+        let prevIndex = tempPrevPaymentData.findIndex(payment => payment.id === id)
         let item = tempPaymentData[index]
         item.isChecked = state
         tempPaymentData[index] = item
+        tempPrevPaymentData[prevIndex] = item
+        setPrevPaymentData(tempPrevPaymentData)
         setPaymentData(tempPaymentData)
     }
     const setAllSelected = (state) => {
         let checkedData = paymentData.map(item => (
             {...item ,isChecked : state}
         ))
+        let checkedDataIDs = paymentData.map(item => item.id)
+        let checkedPrevData = prevPaymentData.map(item => {
+            let exists = checkedDataIDs.includes(item.id)
+            if(exists) item.isChecked = state
+            return item
+        })
         setPaymentData(checkedData)
     }
     const sortDataTable = (type , field) => {
