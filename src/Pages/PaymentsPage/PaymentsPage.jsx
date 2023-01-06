@@ -1,10 +1,10 @@
 import React from 'react'
-import jsonData from '../API/paymentData.json'
-import headerJsonData from '../API/paymentHeaderData.json'
-import PaymentsContextProvider from '../contexts/paymentsContext';
-import PaymentTableContainer from '../components/PaymentTableContainer'
-import PaymentNavBar from '../components/PaymentNavBar';
-
+import jsonData from '../../API/paymentData.json'
+import headerJsonData from '../../API/paymentHeaderData.json'
+import PaymentsContextProvider from '../../contexts/paymentsContext';
+import PaymentTableContainer from '../../components/PaymentTableContainer'
+import PaymentStatistics from '../../components/PaymentStatistics/PaymentStatistics';
+import styles from './PaymentsPage.module.css'
 const PaymentsPage = () => {
     const addIscheckedToData = (data) => {
         return data.map(item => {
@@ -24,11 +24,14 @@ const PaymentsPage = () => {
         return tempData;
     }
     return (
+      <div className={styles.Container}>
+        <h1 className={styles.Title}>Payouts Overview</h1>
         <PaymentsContextProvider initialData={prepareData(jsonData)} 
                                  initialHeaderData={headerJsonData}>
-            <PaymentNavBar />
+            <PaymentStatistics />
             <PaymentTableContainer />
         </PaymentsContextProvider>
+      </div>
     )
 }
 

@@ -1,0 +1,36 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+    border-radius: 10px;
+    width : 250px;
+    height: 70px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+}
+.Heading{
+    font-size: 12pt;
+}
+.Info_Container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Amouont{
+    display: flex;
+    flex :2
+}
+.Button_container{
+    display: flex;
+    flex :1
+}
+.ActionButton{
+    width: 80px;
+    height: 22px;
+    font-size: 9pt;
+    background-color: rgb(20, 103, 187);
+    color: white;
+    border-radius: 5px;
+    border-width: 0;
+}

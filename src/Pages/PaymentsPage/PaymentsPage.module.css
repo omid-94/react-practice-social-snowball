@@ -1,0 +1,8 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(212, 235, 255);
+}
+.Title{
+    margin-left: 1rem;
+}
