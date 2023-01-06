@@ -1,4 +1,5 @@
 
+import { type } from '@testing-library/user-event/dist/type';
 import React, {useState , createContext, useEffect} from 'react'
 import {Sort_Type} from '../classes/enums'
 
@@ -40,7 +41,18 @@ const PaymentsContextProvider = (props) => {
         }
         setPaymentData(tempData)
     }
-
+    const sortDataTableByString = (type , field) => {
+        let tempData = [...paymentData];
+        switch(type){
+            case Sort_Type.ASC:
+                tempData.sort((a,b) => (a[field] > b[field]) ? 1 : ((b[field] > a[field]) ? -1 : 0))
+                break;
+            case Sort_Type.DESC:
+                tempData.sort((a,b) => (a[field] < b[field]) ? 1 : ((b[field] < a[field]) ? -1 : 0))
+                break;
+        }
+        setPaymentData(tempData)
+    }
     const filterByText = (text , field) => {
         let tempData = [...prevPaymentData];
         tempData = tempData.filter(item => item[field].includes(text))
@@ -48,13 +60,16 @@ const PaymentsContextProvider = (props) => {
     }
     const sortDataByDate = (type) => sortDataTable(type , "latest_referral_DT")
     
-    const sortByRevenue= (type) => sortDataTable(type, "revenue")
+    const sortByRevenue = (type) => sortDataTable(type, "revenue")
+
+    const sortByAffiliateName = (type) => sortDataTableByString(type, "name")
     
     const filterByAffiliateName = (text) => filterByText(text , "name")
+
     return (
         <PaymentsContext.Provider 
             value={{headerData  , paymentData, prevPaymentData,
-                    sortDataByDate, sortByRevenue,
+                    sortDataByDate, sortByRevenue, sortByAffiliateName,
                     filterByAffiliateName ,
                     setSelectedById, setAllSelected}}>
             {props.children}
