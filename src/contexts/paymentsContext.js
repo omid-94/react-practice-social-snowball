@@ -7,6 +7,12 @@ export const PaymentsContext = createContext();
 const PaymentsContextProvider = (props) => {
     const [headerData , setHeaderData] = useState(props.initialHeaderData)
     const [paymentData , setPaymentData] = useState(props.initialData)
+    const [prevPaymentData , setPrevPaymentData] = useState(props.initialData)
+
+    useEffect(() => {
+        if(paymentData.length === prevPaymentData.length)
+            setPrevPaymentData(paymentData)
+    },[paymentData])
 
     const setSelectedById = (id , state) => {
         let tempPaymentData = [...paymentData];
@@ -34,14 +40,22 @@ const PaymentsContextProvider = (props) => {
         }
         setPaymentData(tempData)
     }
+
+    const filterByText = (text , field) => {
+        let tempData = [...prevPaymentData];
+        tempData = tempData.filter(item => item[field].includes(text))
+        setPaymentData(tempData)
+    }
     const sortDataByDate = (type) => sortDataTable(type , "latest_referral_DT")
     
     const sortByRevenue= (type) => sortDataTable(type, "revenue")
     
+    const filterByAffiliateName = (text) => filterByText(text , "name")
     return (
         <PaymentsContext.Provider 
-            value={{headerData  , paymentData,
+            value={{headerData  , paymentData, prevPaymentData,
                     sortDataByDate, sortByRevenue,
+                    filterByAffiliateName ,
                     setSelectedById, setAllSelected}}>
             {props.children}
         </PaymentsContext.Provider>

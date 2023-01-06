@@ -3,7 +3,7 @@ import { Sort_Type } from '../classes/enums'
 import {PaymentsContext} from '../contexts/paymentsContext'
 
 const PaymentNavBar = () => {
-    const {sortDataByDate , sortByRevenue}= useContext(PaymentsContext)
+    const {sortDataByDate , sortByRevenue , filterByAffiliateName}= useContext(PaymentsContext)
     return (
         <div>
             <button onClick={() => sortDataByDate(Sort_Type.DESC)}>
@@ -18,6 +18,8 @@ const PaymentNavBar = () => {
             <button onClick={() => sortByRevenue(Sort_Type.ASC)}>
                 Order By Revenue ASC
             </button>
+            <input type="text" 
+                onChange={(e) => filterByAffiliateName(e.target.value)}/>
         </div>
     )
 }

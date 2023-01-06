@@ -5,7 +5,6 @@ import Table from './PaymentTable/Table'
 
 const PaymentTableContainer = () => {
     const {headerData ,paymentData }= useContext(PaymentsContext)
-    //sortDataByDate(Sort_Type.DESC)
     return (
         <div>
             { headerData && paymentData ?
