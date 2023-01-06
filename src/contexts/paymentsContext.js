@@ -38,6 +38,7 @@ const PaymentsContextProvider = (props) => {
             return item
         })
         setPaymentData(checkedData)
+        setPrevPaymentData(checkedPrevData)
     }
     const sortDataTable = (type , field) => {
         let tempData = [...paymentData];
@@ -69,9 +70,7 @@ const PaymentsContextProvider = (props) => {
         setPaymentData(tempData)
     }
     const sortDataByDate = (type) => sortDataTable(type , "latest_referral_DT")
-    
     const sortByRevenue = (type) => sortDataTable(type, "revenue")
-
     const sortByAffiliateName = (type) => sortDataTableByString(type, "name")
     
     const filterByAffiliateName = (text) => filterByText(text , "name")
