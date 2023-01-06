@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-
+import PaymentsPage from './Pages/PaymentsPage';
+import PaymentsContextProvider from './contexts/paymentsContext';
+import jsonData from './API/paymentData.json'
+import headerJsonData from './API/paymentHeaderData.json'
 function App() {
+  const addIscheckedToData = (data) => {
+    return data.map(item => {
+      item["isChecked"] = false;
+      return item;
+    })
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PaymentsContextProvider initialData={addIscheckedToData(jsonData)} 
+                             initialHeaderData={headerJsonData}>
+      <PaymentsPage />
+    </PaymentsContextProvider>
   );
 }
 

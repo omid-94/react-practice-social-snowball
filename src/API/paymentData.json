@@ -1,0 +1,164 @@
+[
+    {
+        "id" : 1,
+        "name" : "aaa",
+        "revenue" : 365.0,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 15.0,
+        "ready_payouts" : 36.5,
+        "type" : 1,
+        "latest_referral" : "16 March 2022"
+    },
+    {
+        "id" : 2,
+        "name" : "bbb",
+        "revenue" : 165.0,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 16.0,
+        "ready_payouts" : 12.5,
+        "type" : 1,
+        "latest_referral" : "20 June 2022"
+    },
+    {
+        "id" : 3,
+        "name" : "ccc",
+        "revenue" : 200.0,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 20.0,
+        "ready_payouts" : 36.5,
+        "type" : 1,
+        "latest_referral" : "10 April 2022"        
+    },
+    {
+        "id" : 4,
+        "name" : "ddd",
+        "revenue" : 33.6,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 11.0,
+        "ready_payouts" : 12.6,
+        "type" : 1,
+        "latest_referral" : "12 April 2022"       
+    },
+
+    {
+        "id" : 5,
+        "name" : "eee",
+        "revenue" : 120.3,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 30.0,
+        "ready_payouts" : 36.0,
+        "type" : 1,
+        "latest_referral" : "10 May 2022"     
+    },
+
+    {
+        "id" : 6,
+        "name" : "fff",
+        "revenue" : 235.9,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 5.0,
+        "ready_payouts" : 45.5,
+        "type" : 1,
+        "latest_referral" : "01 March 2022"        
+    },
+    {
+        "id" : 7,
+        "name" : "ggg",
+        "revenue" : 305.0,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 18.0,
+        "ready_payouts" : 26.5,
+        "type" : 1,
+        "latest_referral" : "15 April 2022"       
+    },
+    {
+        "id" : 8,
+        "name" : "hhh",
+        "revenue" : 207.0,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 16.0,
+        "ready_payouts" : 23.45,
+        "type" : 1,
+        "latest_referral" : "05 May 2022"       
+    },
+    {
+        "id" : 9,
+        "name" : "iii",
+        "revenue" : 301.0,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 12.0,
+        "ready_payouts" : 46.5,
+        "type" : 1 ,
+        "latest_referral" : "09 May 2022"      
+    },
+    {
+        "id" : 10,
+        "name" : "jjj",
+        "revenue" : 122.0,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 13.3,
+        "ready_payouts" : 14.4,
+        "type" : 1 ,
+        "latest_referral" : "12 March 2022"       
+    },
+    {
+        "id" : 11,
+        "name" : "kkk",
+        "revenue" : 106.0,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 16.5,
+        "ready_payouts" : 16.5,
+        "type" : 1,
+        "latest_referral" : "05 April 2022"        
+    },
+    {
+        "id" : 12,
+        "name" : "lll",
+        "revenue" : 105.0,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 16.0,
+        "ready_payouts" : 50.4,
+        "type" : 1,
+        "latest_referral" : "01 June 2022"        
+    },
+    {
+        "id" : 13,
+        "name" : "mmmm",
+        "revenue" : 50.5,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 10.0,
+        "ready_payouts" : 10.5,
+        "type" : 1,
+        "latest_referral" : "05 March 2022"        
+    },
+    {
+        "id" : 14,
+        "name" : "nnn",
+        "revenue" : 89.0,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 15.0,
+        "ready_payouts" : 36.0,
+        "type" : 1 ,
+        "latest_referral" : "22 April 2022"       
+    },
+    {
+        "id" : 15,
+        "name" : "ooo",
+        "revenue" : 300.0,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 20.0,
+        "ready_payouts" : 30.5,
+        "type" : 1 ,
+        "latest_referral" : "18 May 2022"       
+    },
+    {
+        "id" : 16,
+        "name" : "ppp",
+        "revenue" : 180.0,
+        "paid_payouts" : 0.0,
+        "unpaid_payouts" : 21.0,
+        "ready_payouts" : 50.0,
+        "type" : 1 ,
+        "latest_referral" : "07 March 2022"       
+    }
+]

@@ -1,0 +1,36 @@
+.Table{
+    margin: 1rem;
+    flex: 1;
+    border:1px solid black;
+    border-radius: 5px;
+    overflow: auto;
+    background-color: #dae9fd;
+    text-align: center;
+}
+.Header > tr > th{
+    padding: 0.5rem;
+    font-size: 10pt;
+    text-align: center;
+}
+.Row {
+    background-color: white;
+}
+.Row > td{
+    padding: 0.3rem  0 0.3rem  0; 
+    font-size: 10pt;
+    text-align: center;
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 3rem;
+    /* border:1px solid black; */
+}
+.Row > td > input{
+    width: 1rem;
+    height: 1rem;
+}
+.Header > tr > th > input{
+    width: 1rem;
+    height: 1rem;
+}

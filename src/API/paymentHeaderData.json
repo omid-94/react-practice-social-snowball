@@ -1,0 +1,30 @@
+[    
+    {
+    "title" : "",
+    "key" : "isChecked"
+    },
+    {
+    "title" : "Affiliate Name",
+    "key" : "name"
+    },
+    {
+    "title" : "Revenue Generated",
+    "key" : "revenue"
+    },
+    {
+    "title" : "Paid Layout",
+    "key" : "paid_payouts"
+    },
+    {
+    "title" : "Unpaid Layout",
+    "key" : "unpaid_payouts"
+    },
+    {
+    "title" : "Ready Layout",
+    "key" : "ready_payouts"
+    },
+    {
+    "title" : "Type",
+    "key" : "type"
+    }
+]
