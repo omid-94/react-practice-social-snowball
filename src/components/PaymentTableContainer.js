@@ -1,9 +1,11 @@
 import React , {useContext} from 'react'
+import { Sort_Type } from '../classes/enums'
 import {PaymentsContext} from '../contexts/paymentsContext'
 import Table from './PaymentTable/Table'
 
 const PaymentTableContainer = () => {
     const {headerData ,paymentData }= useContext(PaymentsContext)
+    //sortDataByDate(Sort_Type.DESC)
     return (
         <div>
             { headerData && paymentData ?

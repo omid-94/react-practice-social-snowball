@@ -8,6 +8,10 @@
     "key" : "name"
     },
     {
+    "title" : "Most Recent Referral",
+    "key" : "latest_referral"
+    },
+    {
     "title" : "Revenue Generated",
     "key" : "revenue"
     },
