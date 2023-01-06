@@ -4,9 +4,16 @@ import {PaymentsContext} from '../contexts/paymentsContext'
 
 const PaymentNavBar = () => {
     const {sortDataByDate , sortByRevenue , 
-        filterByAffiliateName ,sortByAffiliateName}= useContext(PaymentsContext)
+        filterByAffiliateName ,sortByAffiliateName, getStatistics}= useContext(PaymentsContext)
+    const statisticsData = getStatistics();
     return (
         <div>
+            <h2>
+                {statisticsData.total_paid_layout} <br/>
+                {statisticsData.total_unpaid_layout} <br/>
+                {statisticsData.total_ready_layout} <br/>
+                {statisticsData.pending_payouts} <br/>
+            </h2>
             <button onClick={() => sortDataByDate(Sort_Type.DESC)}>
                 Order By Date DESC
             </button>

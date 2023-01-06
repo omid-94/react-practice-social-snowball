@@ -75,12 +75,29 @@ const PaymentsContextProvider = (props) => {
     
     const filterByAffiliateName = (text) => filterByText(text , "name")
 
+    const getStatistics = () => {
+        let result = {total_paid_layout : 0 
+                    , total_unpaid_layout : 0 
+                    , total_ready_layout : 0 
+                    , pending_payouts : 0}
+        prevPaymentData.map(item => {
+            result.total_paid_layout += item.paid_payouts
+            result.total_unpaid_layout += item.unpaid_payouts
+            result.total_ready_layout += item.ready_payouts
+        })
+        result.total_paid_layout = result.total_paid_layout.toFixed(2)
+        result.total_unpaid_layout = result.total_unpaid_layout.toFixed(2)
+        result.total_ready_layout = result.total_ready_layout.toFixed(2)
+        result.pending_payouts = prevPaymentData.length
+        return result;
+    }
     return (
         <PaymentsContext.Provider 
             value={{headerData  , paymentData, prevPaymentData,
                     sortDataByDate, sortByRevenue, sortByAffiliateName,
                     filterByAffiliateName ,
-                    setSelectedById, setAllSelected}}>
+                    setSelectedById, setAllSelected,
+                    getStatistics}}>
             {props.children}
         </PaymentsContext.Provider>
     )
