@@ -1,8 +1,7 @@
 .TabContainer{
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 .TabBarContainer {
   display: flex;
@@ -15,14 +14,14 @@
   width: 150px;
   font-size: 11pt;
   height: 2rem;
-
   border: 0px;
+  color: dodgerblue;
   border-bottom: 1px;
   border-color: black;
   border-style: solid;
 }
 .TabButtonContainerActive{
-  border: 1px solid darkblue;
+  border: 1px solid black;
   border-bottom: 0;
   border-width: 1px;
   color: black;
@@ -43,6 +42,7 @@
   outline: 0;
   height: 2rem;
   line-height: 2rem;
+  color: inherit;
 }
 .TabContent{
   display: flex;
