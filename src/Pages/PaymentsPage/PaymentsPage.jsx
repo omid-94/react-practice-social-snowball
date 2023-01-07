@@ -5,6 +5,7 @@ import PaymentsContextProvider from '../../contexts/paymentsContext';
 import PaymentTableContainer from '../../components/PaymentTableContainer'
 import PaymentStatistics from '../../components/PaymentStatistics/PaymentStatistics';
 import styles from './PaymentsPage.module.css'
+import PaymentsTabLayout from '../../components/TabLyouts/PaymentsTabLayout/PaymentsTabLayout';
 const PaymentsPage = () => {
     const addIscheckedToData = (data) => {
         return data.map(item => {
@@ -29,7 +30,7 @@ const PaymentsPage = () => {
         <PaymentsContextProvider initialData={prepareData(jsonData)} 
                                  initialHeaderData={headerJsonData}>
             <PaymentStatistics />
-            <PaymentTableContainer />
+            <PaymentsTabLayout />
         </PaymentsContextProvider>
       </div>
     )
