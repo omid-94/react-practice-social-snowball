@@ -2,7 +2,6 @@ import React from 'react'
 import jsonData from '../../API/paymentData.json'
 import headerJsonData from '../../API/paymentHeaderData.json'
 import PaymentsContextProvider from '../../contexts/paymentsContext';
-import PaymentTableContainer from '../../components/PaymentTableContainer'
 import PaymentStatistics from '../../components/PaymentStatistics/PaymentStatistics';
 import styles from './PaymentsPage.module.css'
 import PaymentsTabLayout from '../../components/TabLyouts/PaymentsTabLayout/PaymentsTabLayout';

@@ -1,6 +1,6 @@
 import React from 'react'
 import TabLayout from '../TabLayout'
-import PaymentTableContainer from '../../PaymentTableContainer'
+import PaymentTableContainer from '../../PaymentTableContainer/PaymentTableContainer'
 
 const PaymentsTabLayout = () => {
     const tabs = [
@@ -8,7 +8,6 @@ const PaymentsTabLayout = () => {
             title : "Pending Payouts",
             component : 
                 <div>
-                    <div> Filters </div>
                     <PaymentTableContainer />
                 </div>
         },

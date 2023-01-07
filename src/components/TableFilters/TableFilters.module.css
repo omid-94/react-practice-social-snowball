@@ -1,0 +1,21 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    flex-wrap: wrap;
+    min-height: 1rem;
+}
+.RightHandSide{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-content: flex-end;
+}
+.EmptySpace{
+    display: flex;
+    flex: 1;
+}
+.LeftHandSide{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-content: flex-start;
+}
