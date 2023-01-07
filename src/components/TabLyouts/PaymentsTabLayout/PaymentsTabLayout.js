@@ -5,7 +5,7 @@ import PaymentTableContainer from '../../PaymentTableContainer'
 const PaymentsTabLayout = () => {
     const tabs = [
         {
-            title : "tab 01 tab 01 tab 01",
+            title : "Pending Payouts",
             component : 
                 <div>
                     <div> Filters </div>
@@ -13,15 +13,7 @@ const PaymentsTabLayout = () => {
                 </div>
         },
         {
-            title : "tab 02 tab 02 tab 02" ,
-            component :   <h1>Not Implemented Yet...</h1>
-        },
-        {
-            title : "tab 03 tab 03 tab 03" ,
-            component :   <h1>Not Implemented Yet...</h1>
-        },
-        {
-            title : "tab 04 tab 04 tab 04" ,
+            title : "Paid Payouts" ,
             component :   <h1>Not Implemented Yet...</h1>
         }
     ]

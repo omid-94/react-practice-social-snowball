@@ -3,17 +3,18 @@ import styles from './TabLayout.module.css'
 const TabLayout = ({children = []}) => {
   const [acitiveIndex , setAcitiveIndex] = useState(0)
 
-  const TabButtons = (<div className={styles.TabButtonContainer}>
+  const TabButtons = (<div className={styles.TabBarContainer}>
       {children.map((item, index) => {
-        return <div key={index}>
-            <button className={styles.TabButton} 
+        return <div key={index} 
+                className={acitiveIndex === index ? 
+                        styles.TabButtonContainerActive : styles.TabButtonContainer} >
+            <button className={styles.TabButton}
                     onClick={() => setAcitiveIndex(index)}>
               {item.title}
             </button>
-            <div className={styles.UnderlineActive} 
-                 style={{display : acitiveIndex === index ? "block": "none"}}/>
           </div>
       })}
+       <div className={styles.UnderlineRest} />
     </div>)
   const TabContents = (<div className={styles.TabContentContainer}>
     {children.map((item,index) => {
