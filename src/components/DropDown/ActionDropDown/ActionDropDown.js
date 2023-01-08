@@ -8,9 +8,9 @@ const ActionDropDown = () => {
     <ul className={styles.Dropdown + " " + styles.Actions}>
       <li><a  onClick={preventDefault}>Actions <BsFillCaretDownFill /></a>
           <ul>
-              <li><a className={styles.Button_Border} href=''>Mark As Paid</a></li>
-              <li><a className={styles.Button_Border} href=''>Reject</a></li>
-              <li><a href=''>Send Payouts</a></li>
+              <li><a className={styles.Button_Border} onClick={preventDefault}>Mark As Paid</a></li>
+              <li><a className={styles.Button_Border} onClick={preventDefault}>Reject</a></li>
+              <li><a onClick={preventDefault}>Send Payouts</a></li>
           </ul>
       </li>
   </ul>
