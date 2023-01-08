@@ -18,7 +18,7 @@ const TableFilters = () => {
         <div className={styles.EmptySpace}/>
         <div className={styles.RightHandSide}>
             <input type={"text"} onChange={(e) => setFilterText(e.target.value)}
-                   style={{borderRadius : "7px", width : "200px" , textIndent : "5px"}}
+                   style={{borderRadius : "7px", width : "200px" , textIndent : "5px" , marginTop : "5px"}}
                    placeholder={"Affiliate's name or email"} />
             <TableFilterButton text={"Search"} 
                               onClick={() => filterByAffiliateName(filterText)}/>

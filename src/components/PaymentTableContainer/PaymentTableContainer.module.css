@@ -1,4 +1,9 @@
 .Container{
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+.TableContainer{
+    overflow-x: auto;
+    margin: 1rem;
 }

@@ -1,11 +1,9 @@
 .Table{
-    margin: 1rem;
-    flex: 1;
     border:1px solid black;
     border-radius: 5px;
-    overflow: auto;
     background-color: #dae9fd;
     text-align: center;
+    width: 100%;
 }
 .Header > tr > th{
     padding: 0.5rem;

@@ -1,7 +1,7 @@
 .Container{
     display: flex;
     flex-direction: column;
-    background-color: rgb(226, 240, 253);
+    height: 100vh;
 }
 .Title{
     margin-left: 1rem;

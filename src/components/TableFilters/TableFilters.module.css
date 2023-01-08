@@ -7,7 +7,7 @@
 }
 .RightHandSide{
     display: flex;
-    margin-top: 5px;
+    flex-wrap: wrap;
     align-content: flex-end;
 }
 .EmptySpace{
@@ -17,6 +17,6 @@
 }
 .LeftHandSide{
     display: flex;
-    margin-top: 5px;
+    flex-wrap: wrap;
     align-content: flex-start;
 }

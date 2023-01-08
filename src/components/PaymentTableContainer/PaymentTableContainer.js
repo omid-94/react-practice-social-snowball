@@ -10,10 +10,12 @@ const PaymentTableContainer = () => {
     return (
         <div className={styles.Container}> 
             <TableFilters />
+            <div className={styles.TableContainer}>
             { headerData && paymentData ?
                 <Table/>
                 : <h2>No Data Found</h2>
             }
+            </div>
         </div>
     )
 }

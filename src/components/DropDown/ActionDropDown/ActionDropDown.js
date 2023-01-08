@@ -5,7 +5,7 @@ import { BsFillCaretDownFill } from "react-icons/bs";
 const ActionDropDown = () => {
   const preventDefault = (e) => e.preventDefault();
   return (
-    <ul class={styles.Dropdown + " " + styles.Actions}>
+    <ul className={styles.Dropdown + " " + styles.Actions}>
       <li><a  onClick={preventDefault}>Actions <BsFillCaretDownFill /></a>
           <ul>
               <li><a className={styles.Button_Border} href=''>Mark As Paid</a></li>
