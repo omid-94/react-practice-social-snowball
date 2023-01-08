@@ -1,4 +1,4 @@
-.dropdown {
+.Dropdown {
     margin : 0;
     margin-left: 5px;
     padding: 0;
@@ -11,12 +11,12 @@
     border-radius: 3px;
 }
 
-.dropdown li {
+.Dropdown li {
     position: relative;
     padding: 5px;
 }
 
-.dropdown li a {
+.Dropdown li a {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
@@ -24,7 +24,7 @@
     /* padding: 10px; */
 }
 
-.dropdown li ul {
+.Dropdown li ul {
     position: absolute;
     top: 100%;
     margin: 0;
@@ -36,7 +36,7 @@
     border: 1px solid lightgray;
 }
 
-.dropdown li ul li a {
+.Dropdown li ul li a {
     text-align: left;
     color: black;
     font-size: 14px;
@@ -49,28 +49,25 @@
 }
 
 
-.dropdown li ul li a:hover {
+.Dropdown li ul li a:hover {
     background-color: dodgerblue;
     /* color: black; */
 }
 
-.dropdown li ul li ul {
+.Dropdown li ul li ul {
     left: 100%;
     top: 0;
 }
-
 ul li:hover>a {
     background-color: dodgerblue;
     color: #ffffff !important;
 }
-
 ul li:hover>ul {
     display: block;
 }
 .Icon{
     color: lightgray;
 }
-
 ul li:hover > a .Icon {
     color: #ffffff;
 }

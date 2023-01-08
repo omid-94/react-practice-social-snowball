@@ -4,7 +4,7 @@ import { BsFillCaretDownFill , BsFillCaretRightFill } from "react-icons/bs";
 
 const SortByDropDown = () => {
   return (
-      <ul className={styles.dropdown}>
+      <ul className={styles.Dropdown}>
       <li><a href="#">Sort By <BsFillCaretDownFill /></a>
           <ul>
               <li><a href="">Revenue Generated 

@@ -4,7 +4,7 @@ import { BsFillCaretDownFill } from "react-icons/bs";
 
 const ActionDropDown = () => {
   return (
-    <ul class={styles.dropdown}>
+    <ul class={styles.Dropdown + " " + styles.Actions}>
       <li><a href="#">Actions <BsFillCaretDownFill /></a>
           <ul>
               <li><a className={styles.Button_Border} href="">Mark As Paid</a></li>

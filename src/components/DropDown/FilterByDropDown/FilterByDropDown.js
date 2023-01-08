@@ -4,7 +4,7 @@ import { BsFillCaretDownFill } from "react-icons/bs";
 
 const FilterByDropDown = () => {
   return (
-      <ul class={styles.dropdown}>
+      <ul class={styles.Dropdown}>
         <li><a href="#">Filter By <BsFillCaretDownFill /></a>
             <ul>
                 <li><a href="">All Pendng Payouts</a></li>
