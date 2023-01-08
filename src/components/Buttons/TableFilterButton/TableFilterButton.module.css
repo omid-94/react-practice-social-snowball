@@ -1,0 +1,13 @@
+.FilterButton{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin-left: 5px;
+    background-color: dodgerblue;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    font-size: 14pt;
+    width: 70px;
+    justify-content: center;
+}

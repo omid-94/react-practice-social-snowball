@@ -3,13 +3,14 @@ import styles from '../DropDown.module.css'
 import { BsFillCaretDownFill } from "react-icons/bs";
 
 const FilterByDropDown = () => {
+  const preventDefault = (e) => e.preventDefault();
   return (
       <ul class={styles.Dropdown}>
-        <li><a href="#">Filter By <BsFillCaretDownFill /></a>
+        <li><a onClick={preventDefault}>Filter By <BsFillCaretDownFill /></a>
             <ul>
-                <li><a href="">All Pendng Payouts</a></li>
-                <li><a href="">Ready Payouts</a></li>
-                <li><a href="#">No Leaks</a></li>
+                <li><a  href=''>All Pendng Payouts</a></li>
+                <li><a  href=''>Ready Payouts</a></li>
+                <li><a  href=''>No Leaks</a></li>
             </ul>
         </li>
     </ul>

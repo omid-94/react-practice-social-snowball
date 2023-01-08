@@ -7,15 +7,16 @@
 }
 .RightHandSide{
     display: flex;
-    /* flex-wrap: wrap; */
+    margin-top: 5px;
     align-content: flex-end;
 }
 .EmptySpace{
     display: flex;
     flex: 1;
+    margin-top: 5px;
 }
 .LeftHandSide{
     display: flex;
-    /* flex-wrap: wrap; */
+    margin-top: 5px;
     align-content: flex-start;
 }
