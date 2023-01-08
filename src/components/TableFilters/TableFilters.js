@@ -1,13 +1,14 @@
 import React from 'react'
 import styles from './TableFilters.module.css';
+import {FilterByDropDown , ActionDropDown , SortByDropDown} from '../DropDown'
 
 const TableFilters = () => {
   return (
     <div className={styles.Container}>
         <div className={styles.LeftHandSide}>
-            <button >Button 01 </button>
-            <button >Button 01 </button>
-            <button >Button 01 </button>
+          <SortByDropDown />
+          <FilterByDropDown />
+          <ActionDropDown />
         </div>
         <div className={styles.EmptySpace}/>
         <div className={styles.RightHandSide}>

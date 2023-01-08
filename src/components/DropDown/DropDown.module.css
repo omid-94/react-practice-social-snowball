@@ -1,0 +1,83 @@
+.dropdown {
+    margin : 0;
+    margin-left: 5px;
+    padding: 0;
+    list-style: none;
+    width: 100px;
+    height: 25px;
+    font-size: 10pt;
+    justify-content: center;
+    background-color: dodgerblue;
+    border-radius: 3px;
+}
+
+.dropdown li {
+    position: relative;
+    padding: 5px;
+}
+
+.dropdown li a {
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    /* padding: 10px; */
+}
+
+.dropdown li ul {
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    line-height: normal;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+.dropdown li ul li a {
+    text-align: left;
+    color: black;
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.dropdown li ul li a:hover {
+    background-color: dodgerblue;
+    /* color: black; */
+}
+
+.dropdown li ul li ul {
+    left: 100%;
+    top: 0;
+}
+
+ul li:hover>a {
+    background-color: dodgerblue;
+    color: #ffffff !important;
+}
+
+ul li:hover>ul {
+    display: block;
+}
+.Icon{
+    color: lightgray;
+}
+
+ul li:hover > a .Icon {
+    color: #ffffff;
+}
+
+.Button_Border{
+    border: 0;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: lightgray;
+}
