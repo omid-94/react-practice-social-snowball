@@ -39,7 +39,6 @@
 }
 .ModalBody{
     flex: 1;
-    background-color: bisque;
     overflow-x: auto;
     overflow-y: auto;
 }

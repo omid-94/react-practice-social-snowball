@@ -23,7 +23,7 @@ const PaymentModal = ({setShouldShow}) => {
             </h3>
           </div>
           <div className={styles.ModalBody}>
-            omid omdi omid
+            <h2>Data Table Here....</h2>
           </div>
           <div className={styles.ModalFooter}>
             <button>
