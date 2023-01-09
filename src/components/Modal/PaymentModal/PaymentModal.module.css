@@ -1,0 +1,63 @@
+.ModalContainer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.ModalHeader{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+.BackButtonContainer{
+    position: fixed;
+    height: 60px;
+    width: 60px;
+}
+.BackButton{
+    height: 100%;
+    border: 0;
+    font-size: 11pt;
+    color: dodgerblue;
+    background-color: transparent;
+}
+.BackButtonIcon{
+    height: 15px;
+    width: 15px;
+    color: dodgerblue;
+    margin-left: 2px;
+    margin-right: 5px;
+}
+.BackButtonItems{
+    display: flex;
+    flex-direction: row;
+}
+.Title{
+    flex: 1;
+    color: rgb(187, 179, 179);
+}
+.ModalBody{
+    flex: 1;
+    background-color: bisque;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+.ModalFooter{
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.ModalFooter > button{
+    width: 100%;
+    height: 100%;
+    background-color: dodgerblue;
+    border: 0;
+    text-align: center;
+    color: white;
+    font-size: 12pt;
+}
+.SendIcon{
+    width: 15px;
+    height: 15px;
+}

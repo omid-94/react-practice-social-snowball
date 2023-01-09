@@ -6,8 +6,9 @@ import PaymentStatistics from '../../components/PaymentStatistics/PaymentStatist
 import styles from './PaymentsPage.module.css'
 import PaymentsTabLayout from '../../components/TabLyouts/PaymentsTabLayout/PaymentsTabLayout';
 import Modal from '../../components/Modal/Modal';
+import PaymentModal from '../../components/Modal/PaymentModal/PaymentModal';
 const PaymentsPage = () => {
-  const [shouldShow , setShouldShow] = useState(false)
+  const [showModal , setShowModal] = useState(false)
     const addIscheckedToData = (data) => {
         return data.map(item => {
           item["isChecked"] = false;
@@ -29,17 +30,12 @@ const PaymentsPage = () => {
       <div className={styles.Container}>
         <h1 className={styles.Title}>Payouts Overview</h1>
         <PaymentsContextProvider initialData={prepareData(jsonData)} 
-                                 initialHeaderData={headerJsonData}>
+                                 initialHeaderData={headerJsonData}
+                                 showModal={showModal} setShowModal={setShowModal}>
             <PaymentStatistics />
             <PaymentsTabLayout />
-            <button onClick={() => setShouldShow(true)}>
-              Show Modal
-            </button>
-            {shouldShow &&
-                <Modal setShow={setShouldShow}>
-                  <h1>omid is back...</h1>
-                </Modal>
-              }
+            {showModal &&
+              <PaymentModal setshowModal={setShowModal}/> }
         </PaymentsContextProvider>
       </div>
     )

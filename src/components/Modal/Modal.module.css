@@ -9,7 +9,10 @@
     backdrop-filter: saturate(180%) blur(1px);
 }
 .ModalContainer{
+    min-height: 80%;
     opacity: 1;
+    display: flex;
     width: 80%;
-    background-color: aqua;
+    border-radius: 10px;
+    background-color: white;
 }

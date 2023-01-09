@@ -9,7 +9,7 @@ const PaymentsContextProvider = (props) => {
     const [headerData , setHeaderData] = useState(props.initialHeaderData)
     const [paymentData , setPaymentData] = useState(props.initialData)
     const [prevPaymentData , setPrevPaymentData] = useState(props.initialData)
-
+    const {showModal , setShowModal} = props
     useEffect(() => {
         if(paymentData.length === prevPaymentData.length)
             setPrevPaymentData(paymentData)
@@ -97,7 +97,8 @@ const PaymentsContextProvider = (props) => {
                     sortDataByDate, sortByRevenue, sortByAffiliateName,
                     filterByAffiliateName ,
                     setSelectedById, setAllSelected,
-                    getStatistics}}>
+                    getStatistics,
+                    showModal , setShowModal}}>
             {props.children}
         </PaymentsContext.Provider>
     )
